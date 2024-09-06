@@ -14,9 +14,14 @@ public class UserServiceImpl implements IUserService{
 	@Autowired
 	private UserRepositary repo;
 
+
+
+
+
+
 	@Override
 	public Integer saveUser(User user) {
-		// TODO Auto-generated method stub
+		
 		return repo.save(user).getId(); 
 	}
 
